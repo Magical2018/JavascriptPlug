@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>判断当前H5页面在以下三种客户端打开Demo</title>
+</head>
+<body>
+	<script type="text/javascript" src="browserTypePlug.min.js"></script>
+	<script type="text/javascript">
+
+			var appType = wlxs.getOpenWebPlatformWindow();
+
+			switch(appType)
+			{
+					case 'weixin':
+
+						//your code ...
+						alert('当前是微信平台');
+						break;
+
+					case 'alipay':
+
+						//your code ...
+						alert('当前是支付宝平台');
+						break;
+
+					case 'chrome':
+
+						//your code ...
+						alert('当前是谷歌浏览器');
+						break;
+			}
+					
+	</script>
+</body>
+</html>
