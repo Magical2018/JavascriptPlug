@@ -17,7 +17,7 @@
 				 ]
 		}
 		
-		var factory = function (){
+		plug.wlxs.getOpenWebPlatformWindow = (function (){
 
 				var browser_user_agent = navigator.userAgent.toLowerCase(); 
 
@@ -46,8 +46,7 @@
 								return SystemParam.outSign[matchIndex];
 						}
 
-		}
+		})();
 
-		plug.wlxs.getOpenWebPlatformWindow = factory();
 
 	})(window);
